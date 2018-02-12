@@ -18,7 +18,7 @@ The ARVR server module requires a viewport to be configured as the ARVR viewport
 You will need to add the following code to a script on your root node:
 
 ```
-var interface = find_interface("Oculus")
+var interface = ARVRServer.find_interface("Oculus")
 if interface and interface.initialize():
 	get_viewport().arvr = true
 ```
@@ -30,7 +30,7 @@ If you want control over the output on screen so you can show something independ
 You can now simplify you initialisation code on your root node to:
 
 ```
-var interface = find_interface("Oculus")
+var interface = ARVRServer.find_interface("Oculus")
 if interface:
 	interface.initialize()
 ```
