@@ -11,6 +11,9 @@ This module only has support for Windows and the Oculus client software must be 
 Oculus does not (yet) supply an environment for Mac OS X nor Linux.
 This module does not support Gear VR.
 
+Source code for this module can be found here:
+https://github.com/BastiaanOlij/godot_oculus
+
 Using the main viewport
 -----------------------
 The ARVR server module requires a viewport to be configured as the ARVR viewport. If you chose to use the main viewport an aspect ratio corrected copy of the left eye will be rendered to the viewport automatically.
@@ -41,3 +44,13 @@ Licensing
 ---------
 The Godot Oculus module and the godot scenes in this add on are all supplied under an "unlicense".
 The touch controller meshes are copyright Oculus, I'm not sure of the license.
+
+About this repository
+---------------------
+This repository was created by and is maintained by Bastiaan Olij a.k.a. Mux213
+
+You can follow me on twitter for regular updates here:
+https://twitter.com/mux213
+
+Videos about my work with Godot including tutorials on working with VR in Godot can by found on my youtube page:
+https://www.youtube.com/channel/UCrbLJYzJjDf2p-vJC011lYw
