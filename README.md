@@ -12,7 +12,10 @@ Oculus does not (yet) supply an environment for Mac OS X nor Linux.
 This module does not support Gear VR.
 
 Source code for this module can be found here:
-https://github.com/BastiaanOlij/godot_oculus
+https://github.com/GodotVR/godot_oculus
+
+Also note that we have a support asset containing a number of useful scenes to get you going building VR applications in Godot:
+https://github.com/GodotVR/godot-vr-common
 
 Using the main viewport
 -----------------------
@@ -38,12 +41,10 @@ if interface:
 	interface.initialize()
 ```
 
-(note that this is still experimental)
-
 Licensing
 ---------
-The Godot Oculus module and the godot scenes in this add on are all supplied under an "unlicense".
-The touch controller meshes are copyright Oculus, I'm not sure of the license.
+The Godot Oculus module and the godot scenes in this add on are all supplied under an MIT License.
+The touch controller meshes and the Oculus client software are copyright Oculus, please check http://oculus.com for license information.
 
 About this repository
 ---------------------
