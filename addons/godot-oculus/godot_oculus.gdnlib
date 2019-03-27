@@ -3,6 +3,7 @@
 singleton=true
 load_once=true
 symbol_prefix="godot_oculus_"
+reloadable=false
 
 [entry]
 
@@ -12,6 +13,6 @@ OSX.64=""
 
 [dependencies]
 
-X11.64=[""]
-Windows=[""]
-OSX.64=[""]
+X11.64=[ "" ]
+Windows=[ "" ]
+OSX.64=[ "" ]

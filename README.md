@@ -1,6 +1,8 @@
 # Godot Oculus GDNative module
 This module is provided as is, all files are contained within the addons/godot-oculus folder
 
+This module requires **Godot 3.1 or newer** to run.
+
 The scenes subfolder contains a number of godot scenes that help you set up your project. 
 For basic functionality start with adding oculus_first_person.tcn to your project.
 Also make sure that vsync is turned off in your project settings.
@@ -9,7 +11,7 @@ There is support for touch controllers. Note that Godot already supports the XBo
 
 This module only has support for Windows and the Oculus client software must be installed.
 Oculus does not (yet) supply an environment for Mac OS X nor Linux.
-This module does not support Gear VR.
+This module does not support Gear VR, Oculus Go or Oculus Quest.
 
 Source code for this module can be found here:
 https://github.com/GodotVR/godot_oculus
@@ -25,8 +27,15 @@ You will need to add the following code to a script on your root node:
 
 ```
 var interface = ARVRServer.find_interface("Oculus")
-if interface and interface.initialize():
+if interface and interface.initialize()
+	# Tell our viewport it is the arvr viewport:
 	get_viewport().arvr = true
+
+	# turn off vsync, we'll be using the headsets vsync
+	OS.vsync_enabled = false
+		
+	# change our physics fps
+	Engine.target_fps = 90
 ```
 
 Using a separate viewport
@@ -37,8 +46,12 @@ You can now simplify you initialisation code on your root node to:
 
 ```
 var interface = ARVRServer.find_interface("Oculus")
-if interface:
-	interface.initialize()
+if interface and interface.initialize()
+	# turn off vsync, we'll be using the headsets vsync
+	OS.vsync_enabled = false
+		
+	# change our physics fps
+	Engine.target_fps = 90
 ```
 
 Licensing
@@ -54,4 +67,4 @@ You can follow me on twitter for regular updates here:
 https://twitter.com/mux213
 
 Videos about my work with Godot including tutorials on working with VR in Godot can by found on my youtube page:
-https://www.youtube.com/channel/UCrbLJYzJjDf2p-vJC011lYw
+https://www.youtube.com/BastiaanOlij
