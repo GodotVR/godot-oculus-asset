@@ -2,18 +2,17 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/oculus_cv1_controller_left.obj-ae5e3bd4a1838ef2252d0c8acfd36f72.mesh"
+path="res://.import/oculus_cv1_controller_left.obj-c7c67497a9b7a91755e9d2180383c007.mesh"
 
 [deps]
 
-files=[ "res://.import/oculus_cv1_controller_left.obj-ae5e3bd4a1838ef2252d0c8acfd36f72.mesh" ]
+files=[ "res://.import/oculus_cv1_controller_left.obj-c7c67497a9b7a91755e9d2180383c007.mesh" ]
 
-source_file="res://oculus/oculus_cv1_controller_left/oculus_cv1_controller_left.obj"
-source_md5="2e4552d993a5b77efd3286ec3a3a338f"
-
-dest_files=[ "res://.import/oculus_cv1_controller_left.obj-ae5e3bd4a1838ef2252d0c8acfd36f72.mesh", "res://.import/oculus_cv1_controller_left.obj-ae5e3bd4a1838ef2252d0c8acfd36f72.mesh" ]
-dest_md5="d9728cd0213704541a4e4fcdcc10fab1"
+source_file="res://addons/godot-oculus/scenes/oculus_cv1_controller_left/oculus_cv1_controller_left.obj"
+dest_files=[ "res://.import/oculus_cv1_controller_left.obj-c7c67497a9b7a91755e9d2180383c007.mesh", "res://.import/oculus_cv1_controller_left.obj-c7c67497a9b7a91755e9d2180383c007.mesh" ]
 
 [params]
 
 generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
