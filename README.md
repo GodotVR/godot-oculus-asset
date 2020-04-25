@@ -3,7 +3,7 @@ This module is provided as is, all files are contained within the addons/godot-o
 
 This module requires **Godot 3.1 or newer** to run.
 
-The scenes subfolder contains a number of godot scenes that help you set up your project. 
+The scenes subfolder contains a number of godot scenes that help you set up your project.
 For basic functionality start with adding oculus_first_person.tcn to your project.
 Also make sure that vsync is turned off in your project settings.
 
@@ -17,7 +17,7 @@ Source code for this module can be found here:
 https://github.com/GodotVR/godot_oculus
 
 Also note that we have a support asset containing a number of useful scenes to get you going building VR applications in Godot:
-https://github.com/GodotVR/godot-vr-common
+https://github.com/GodotVR/godot-xr-tools
 
 Using the main viewport
 -----------------------
@@ -33,10 +33,12 @@ if interface and interface.initialize()
 
 	# turn off vsync, we'll be using the headsets vsync
 	OS.vsync_enabled = false
-		
+
 	# change our physics fps
 	Engine.target_fps = 90
 ```
+
+Alternatively add `addons/godot-oculus/scenes/oculus_first_person.tscn` to your project.
 
 Using a separate viewport
 -------------------------
@@ -49,7 +51,7 @@ var interface = ARVRServer.find_interface("Oculus")
 if interface and interface.initialize()
 	# turn off vsync, we'll be using the headsets vsync
 	OS.vsync_enabled = false
-		
+
 	# change our physics fps
 	Engine.target_fps = 90
 ```
